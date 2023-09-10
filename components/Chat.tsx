@@ -15,7 +15,7 @@ const Chat = ({ chatId }: Props) => {
 
     const [messages] = useCollection(session && query(
         collection(db, "users", session?.user?.email!, 'chats', chatId, "messages"),
-        orderBy("createdAt", "desc")
+        orderBy("createdAt", "asc")
     ))
 
     return (
