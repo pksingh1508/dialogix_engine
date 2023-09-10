@@ -4,7 +4,7 @@ import { FormEvent, useState } from "react";
 import { useSession } from "next-auth/react";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { db } from "@/firebase";
-import toast from "react-hot-toast/headless";
+import { toast } from "react-hot-toast";
 import ModelSelection from "./ModelSelection";
 import useSWR from 'swr';
 
