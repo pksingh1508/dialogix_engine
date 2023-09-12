@@ -2,6 +2,7 @@ import query from '@/lib/queryApi';
 import type { NextApiRequest, NextApiResponse } from 'next'
 import admin from 'firebase-admin'
 import { adminDb } from '@/firebaseAdmin';
+// import logo1 from '../../public/logo1.jpg'
 
 type Data = {
     answer: string;
