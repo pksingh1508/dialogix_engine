@@ -76,7 +76,7 @@ const ChatInput = ({ chatId }: Props) => {
     };
 
     return (
-        <div className="bg-gray-700/50 text-gray-400 rounded-lg text-sm">
+        <div className="bg-gray-900 text-gray-400 rounded-lg text-sm mx-6 my-3">
             <form onSubmit={sendMessage} className="p-5 space-x-5 flex">
                 <input
                     type="text"
@@ -84,7 +84,7 @@ const ChatInput = ({ chatId }: Props) => {
                     value={prompt}
                     onChange={(e) => setPrompt(e.target.value)}
                     disabled={!session}
-                    className="bg-transparent text-2xl focus:outline-none flex-1 disabled:cursor-not-allowed disabled:text-gray-300"
+                    className="bg-transparent text-2xl focus:outline-none flex-1 disabled:cursor-not-allowed disabled:text-gray-300 text-white font-[17px]"
                 />
                 <button
                     disabled={!prompt || !session}

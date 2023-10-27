@@ -11,7 +11,7 @@ const Login = () => {
                 height={300}
                 alt='logo'
             />
-            <button onClick={() => signIn('google')} className='text-white font-bold text-3xl animate-pulse'>Sign In to use Dialogix Engine</button>
+            <button onClick={() => signIn('google')} className='text-white font-bold text-3xl animate-pulse border-black border px-8 py-3 rounded-lg bg-slate-500'>Register</button>
         </div>
     )
 }
